@@ -1,0 +1,59 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-default {
+  @include button($main1, $main2, $white, 4.5rem, 1.4rem, 0.2rem, 0, 1.2rem);
+}
+
+.btn-dark {
+  @include button(
+    $blackDark,
+    $blackDark,
+    $white,
+    4.5rem,
+    1.4rem,
+    0.4rem,
+    0,
+    2rem
+  );
+  letter-spacing: 0.1rem;
+}
+.pr {
+  position: relative;
+}
+
+.group {
+  margin-bottom: 1.3rem;
+  span {
+    font-size: 1.3rem;
+    display: inline-block;
+    color: $blackDark;
+    cursor: pointer;
+  }
+  &__control {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    outline: none;
+    font-size: 1.6rem;
+    border: 1px solid $silver;
+    height: 5rem;
+    padding: 0 2rem;
+  }
+}
+::placeholder {
+  color: $blackDark;
+  font-size: 1.7rem;
+}
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.y-center {
+  align-items: center;
+}

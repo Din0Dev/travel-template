@@ -1,0 +1,11 @@
+@import "scss/abstracts/variables";
+
+@import "scss/styles.scss";
+// Import utils
+@import "scss/abstracts/mixins";
+@import "scss/utils/utils";
+// Import Component
+@import "scss/components/header";
+@import "scss/components/modal";
+@import "scss/components/nav";
+@import "scss/components/toggle"

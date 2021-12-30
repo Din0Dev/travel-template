@@ -1,0 +1,65 @@
+@mixin position($position, $top, $left, $bottom, $right, $width, $height) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  width: $width;
+  height: $height;
+}
+
+@mixin align($flex, $justify-content, $align-items, $height) {
+  display: $flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  height: $height;
+}
+
+@mixin button(
+  $color1,
+  $color2,
+  $textColor,
+  $height,
+  $fontSize,
+  $bdr,
+  $paddingVeritcal,
+  $paddingHorizontal
+) {
+  background: linear-gradient(to right, $color1, $color2);
+  color: $textColor;
+  text-decoration: none;
+  height: $height;
+  line-height: $height;
+  display: inline-block;
+  font-size: $fontSize;
+  font-weight: 400;
+  border-radius: $bdr;
+  padding: $paddingVeritcal $paddingHorizontal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@mixin animation($name, $duration, $timeFunction, $translate1, $translate2) {
+  animation: $name $duration $timeFunction;
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: translateY($translate1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY($translate2);
+    }
+  }
+}
+
+@mixin toggleSpan($bg, $width, $height, $mt) {
+  display: block;
+  background: $bg;
+  width: $width;
+  height: $height;
+  margin-top: $mt;
+  transition: all .2s ease;
+}

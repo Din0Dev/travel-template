@@ -1,0 +1,21 @@
+.modal {
+  @include position(fixed, 0, 0, 0, 0, 100%, 100%);
+  @include align(flex, center, center, null);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 6;
+  &__heading {
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__body {
+    background: $white;
+    width: 38rem;
+    height: auto;
+    padding: 2rem;
+    font-size: 1.4rem;
+    @include animation(Modalanimate, 0.2s, linear, -1rem, 0);
+  }
+}

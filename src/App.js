@@ -11,6 +11,7 @@ import NavProvider from "./context/providers/NavProvider";
 import { HelmetProvider } from "react-helmet-async";
 import DestinationsProvider from "./context/providers/DestinationsProvider";
 import Details from "./pages/Details";
+import ServicesProvider from "./context/providers/ServicesProvider";
 function App() {
   //! State
 
@@ -22,25 +23,27 @@ function App() {
       <ModelProvider>
         <NavProvider>
           <DestinationsProvider>
-            <Toggle />
-            <Nav />
-            <HelmetProvider>
-              <Switch>
-                <Route path={routeUrl.HOME_PAGE} exact>
-                  <HomePage />
-                </Route>
-                <Route path={routeUrl.ABOUT_PAGE}>
-                  <About />
-                </Route>
-                <Route path={routeUrl.DETAIL_PAGE} exact>
-                  <Details />
-                </Route>
-                {/*  */}
-                <Route>
-                  <PageNotFound />
-                </Route>
-              </Switch>
-            </HelmetProvider>
+            <ServicesProvider>
+              <Toggle />
+              <Nav />
+              <HelmetProvider>
+                <Switch>
+                  <Route path={routeUrl.HOME_PAGE} exact>
+                    <HomePage />
+                  </Route>
+                  <Route path={routeUrl.ABOUT_PAGE}>
+                    <About />
+                  </Route>
+                  <Route path={routeUrl.DETAIL_PAGE} exact>
+                    <Details />
+                  </Route>
+                  {/*  */}
+                  <Route>
+                    <PageNotFound />
+                  </Route>
+                </Switch>
+              </HelmetProvider>
+            </ServicesProvider>
           </DestinationsProvider>
         </NavProvider>
       </ModelProvider>

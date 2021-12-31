@@ -24,7 +24,7 @@ const DestinationsList = ({ destination }) => {
         </div>
         <div className="destinations__card__info">
           <div className="destinations__card__info__text">
-            <Link className="btn-white">Explore</Link>
+            <Link className="btn-white" to={`/details/${destination.id}`}>Explore</Link>
           </div>
         </div>
       </div>

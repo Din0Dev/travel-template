@@ -7,13 +7,28 @@
     @include position(absolute, 3rem, 0, null, null, null, null);
     z-index: 1;
 
-    img{
+    img {
       width: 15rem;
       height: auto;
       object-fit: cover;
     }
   }
   &__video {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      image-rendering: pixelated;
+      animation: headerImage 0.3s linear;
+      @keyframes headerImage {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
     @include position(absolute, 0, 0, null, null, 100%, 100%);
     overflow: hidden;
   }

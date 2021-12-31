@@ -16,6 +16,19 @@
   letter-spacing: 0.1rem;
 }
 
+.btn-dark-sm {
+  @include button(
+    $blackDark,
+    $blackDark,
+    $white,
+    4rem,
+    1.3rem,
+    0.4rem,
+    0,
+    1.5rem
+  );
+  letter-spacing: 0.1rem;
+}
 .btn-white {
   @include button($white, $white, $black, 3rem, 1.2rem, 0.3rem, 0, 2rem);
   letter-spacing: 0.1rem;

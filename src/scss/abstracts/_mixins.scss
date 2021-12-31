@@ -1,4 +1,4 @@
-// Config Functional SCSS 
+// Config Functional SCSS
 
 @mixin position($position, $top, $left, $bottom, $right, $width, $height) {
   position: $position;
@@ -63,5 +63,14 @@
   width: $width;
   height: $height;
   margin-top: $mt;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
+}
+
+@mixin status($bg, $color) {
+  padding: 0.6rem 1.3rem;
+  background-color: $bg;
+  color: $color;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }

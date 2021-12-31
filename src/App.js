@@ -10,6 +10,7 @@ import ModelProvider from "./context/providers/ModelProvider";
 import NavProvider from "./context/providers/NavProvider";
 import { HelmetProvider } from "react-helmet-async";
 import DestinationsProvider from "./context/providers/DestinationsProvider";
+import Details from "./pages/Details";
 function App() {
   //! State
 
@@ -30,6 +31,9 @@ function App() {
                 </Route>
                 <Route path={routeUrl.ABOUT_PAGE}>
                   <About />
+                </Route>
+                <Route path={routeUrl.DETAIL_PAGE} exact>
+                  <Details />
                 </Route>
                 {/*  */}
                 <Route>

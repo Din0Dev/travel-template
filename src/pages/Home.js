@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Login from "../auth/Login";
 import Register from "../auth/Register";
@@ -18,6 +18,10 @@ const HomePage = (props) => {
   const [registerModel] = useState("registerModel");
   const [loginModel] = useState("loginModel");
   const { dispatch } = useContext(ModelContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   //! Function
 
   //! Render

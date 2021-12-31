@@ -5,6 +5,7 @@ import Register from "../auth/Register";
 import Destinations from "../components/Destinations";
 import Header from "../components/Header";
 import Modal from "../components/Modal";
+import Reviews from "../components/reviews/Reviews";
 import Services from "../components/services/Services";
 import ModelContext from "../context/ModelContext";
 import { OPEN_MODAL } from "../context/types/ModelTypes";
@@ -52,6 +53,7 @@ const HomePage = (props) => {
       {/*  */}
       <Destinations />
       <Services />
+      <Reviews />
       {/* MODAL */}
       <Modal current={registerModel}>
         <Register currentModel={loginModel} />

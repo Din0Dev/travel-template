@@ -1,11 +1,16 @@
+// Import Variables and mixins
 @import "scss/abstracts/variables";
-
+@import "scss/abstracts/mixins";
+@import "scss/abstracts/buttons";
+// Import style
 @import "scss/styles.scss";
 // Import utils
-@import "scss/abstracts/mixins";
 @import "scss/utils/utils";
 // Import Component
 @import "scss/components/header";
 @import "scss/components/modal";
 @import "scss/components/nav";
-@import "scss/components/toggle"
+@import "scss/components/toggle";
+@import "scss/components/destinations";
+// Import Layout File
+@import "scss/layout/layout";

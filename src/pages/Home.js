@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Login from "../auth/Login";
 import Register from "../auth/Register";
+import Destinations from "../components/Destinations";
 import Header from "../components/Header";
 import Modal from "../components/Modal";
 import ModelContext from "../context/ModelContext";
@@ -22,11 +23,15 @@ const HomePage = (props) => {
   //! Render
   return (
     <>
-    <Helmet>
-      <title>Travel Friends</title>
-      <meta name="description" content="Travel to the world with travel friends"/>
-      <meta name="keywords" content="travel, travel tours, airline"/>
-    </Helmet>
+      <Helmet>
+        <title>Travel Friends</title>
+        <meta
+          name="description"
+          content="Travel to the world with travel friends"
+        />
+        <meta name="keywords" content="travel, travel tours, airline" />
+      </Helmet>
+      {/*  */}
       <Header heading={state.heading} paragraph={state.paragraph}>
         <div className="header__contents__text__child__link">
           <button
@@ -39,6 +44,10 @@ const HomePage = (props) => {
           </button>
         </div>
       </Header>
+      {/*  */}
+      <Destinations />
+
+      {/* MODAL */}
       <Modal current={registerModel}>
         <Register currentModel={loginModel} />
       </Modal>

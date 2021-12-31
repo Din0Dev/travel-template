@@ -7,7 +7,7 @@ const Nav = (props) => {
   //! State
   const { state, dispatch } = useContext(NavContext);
   //! Function
-  console.log("state", state);
+
   //! Render
   return (
     <>

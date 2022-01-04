@@ -24,10 +24,10 @@ const Destinations = (props) => {
       <div className="container">
         <div className="row mr-minus-15 ml-minus-15">
           <div className="col-6 p-15">
-            <div className="destinations__heading">{state.heading}</div>
+            <div className="destinations__heading animation">{state.heading}</div>
           </div>
           <div className="col-6 p-15">
-            <div className="destinations__paragraph">{state.paragraph}</div>
+            <div className="destinations__paragraph animation">{state.paragraph}</div>
           </div>
         </div>
         <div className="destinations__block">

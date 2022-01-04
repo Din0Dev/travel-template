@@ -10,10 +10,10 @@ const DestinationsInfo = ({ details }) => {
   return (
     <div className="destinationsInfo">
       <div className="container">
-        <h2 className="heading">OverView</h2>
+        <h2 className="heading headingAnimation">OverView</h2>
         <div className="row">
           <div className="col-8">
-            <p className="destinationsInfo__p">{details.details}</p>
+            <p className="destinationsInfo__p headingAnimation">{details.details}</p>
           </div>
         </div>
         <h2 className="heading">Good to know</h2>

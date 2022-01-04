@@ -9,7 +9,7 @@ const DestinationsList = ({ destination }) => {
   //! Render
   return (
     <div className="col-3 p-15">
-      <div className="destinations__card">
+      <div className="destinations__card animation">
         <div className="destinations__card__img">
           <img src={destination.image} alt={destination.image} />
         </div>

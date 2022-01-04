@@ -10,12 +10,12 @@ const Cities = ({ cities, name }) => {
   return (
     <div className="cities">
       <div className="container">
-        <h2 className="heading">Cities in {name}</h2>
+        <h2 className="heading headingAnimation">Cities in {name}</h2>
         <div className="row ml-minus-15 mr-minus-15">
           {cities.length > 0
             ? cities.map((city) => (
                 <div className="col-3 p-15" key={city.id}>
-                  <div className="cities__body">
+                  <div className="cities__body animation">
                     <CitiesImage img={city.image} status={city.status} />
                     <CitiesContents
                       name={city.name}

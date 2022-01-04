@@ -14,6 +14,7 @@ import Details from "./pages/Details";
 import ServicesProvider from "./context/providers/ServicesProvider";
 import GalleryProvider from "./context/providers/GalleryProvider";
 import Contact from "./pages/Contact";
+import AnimationsProvider from "./context/providers/AnimationContext";
 function App() {
   //! State
 
@@ -27,28 +28,30 @@ function App() {
           <GalleryProvider>
             <DestinationsProvider>
               <ServicesProvider>
-                <Toggle />
-                <Nav />
-                <HelmetProvider>
-                  <Switch>
-                    <Route path={routeUrl.HOME_PAGE} exact>
-                      <HomePage />
-                    </Route>
-                    <Route path={routeUrl.ABOUT_PAGE}>
-                      <About />
-                    </Route>
-                    <Route path={routeUrl.CONTACT_PAGE}>
-                      <Contact />
-                    </Route>
-                    <Route path={routeUrl.DETAIL_PAGE} exact>
-                      <Details />
-                    </Route>
-                    {/*  */}
-                    <Route>
-                      <PageNotFound />
-                    </Route>
-                  </Switch>
-                </HelmetProvider>
+                <AnimationsProvider>
+                  <Toggle />
+                  <Nav />
+                  <HelmetProvider>
+                    <Switch>
+                      <Route path={routeUrl.HOME_PAGE} exact>
+                        <HomePage />
+                      </Route>
+                      <Route path={routeUrl.ABOUT_PAGE}>
+                        <About />
+                      </Route>
+                      <Route path={routeUrl.CONTACT_PAGE}>
+                        <Contact />
+                      </Route>
+                      <Route path={routeUrl.DETAIL_PAGE} exact>
+                        <Details />
+                      </Route>
+                      {/*  */}
+                      <Route>
+                        <PageNotFound />
+                      </Route>
+                    </Switch>
+                  </HelmetProvider>
+                </AnimationsProvider>
               </ServicesProvider>
             </DestinationsProvider>
           </GalleryProvider>

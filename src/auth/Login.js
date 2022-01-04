@@ -44,7 +44,7 @@ const Login = ({ currentModel }) => {
         />
       </div>
       {/*  */}
-      <div className="group flex space-between y-center">
+      <div className="group modal__row">
         <input type="submit" name="" className="btn-dark" value="Login" />
         <span
           onClick={() => dispatch({ type: OPEN_MODAL, payload: currentModel })}

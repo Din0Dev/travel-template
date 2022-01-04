@@ -1,6 +1,24 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @include large {
+    max-width: 100%;
+    padding: 0 5rem;
+  }
+  @include medium {
+    max-width: 100%;
+    padding: 0 4rem;
+  }
+  @include small {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+  @include xsmall {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
 }
 
 .pr {
@@ -34,7 +52,7 @@
     border: 1px solid $silverLight-45;
     height: 10rem;
     padding: 1.5rem;
-    &::placeholder{
+    &::placeholder {
       font-family: sans-serif;
       font-size: 1.5rem;
     }
@@ -82,22 +100,25 @@
   background-clip: text;
   color: transparent;
   transform: rotate(-2deg);
+  @include xsmall {
+    font-size: 1.8rem;
+  }
 }
-.animation{
+.animation {
   transform: translateY(-10rem) scale(0);
   opacity: 0;
-  transition: all .8s ease-out;
+  transition: all 0.8s ease-out;
 }
-.animate{
+.animate {
   transform: translateY(0) scale(1);
   opacity: 1;
 }
 .headingAnimation {
   transform: translateY(-10rem) scale(0) rotate(-2deg);
   opacity: 0;
-  transition: all .8s ease-out;
+  transition: all 0.8s ease-out;
 }
-.headingAnimate{
+.headingAnimate {
   transform: translateY(0) scale(1) rotate(-2deg);
   opacity: 1;
 }

@@ -8,6 +8,9 @@
       font-size: 2rem;
       font-weight: 400;
       margin-bottom: 1.5rem;
+      @include xsmall {
+        font-size: 1.7rem;
+      }
     }
   }
   &__body {
@@ -17,5 +20,23 @@
     padding: 2rem;
     font-size: 1.4rem;
     @include animation(Modalanimate, 0.2s, linear, -1rem, 0);
+    @include xsmall {
+      width: 100%;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include xsmall {
+      flex-direction: column;
+      align-items: start;
+      span {
+        display: block;
+        margin-top: 1rem;
+      }
+    }
   }
 }

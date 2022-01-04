@@ -74,3 +74,27 @@
   font-size: 1.3rem;
   text-transform: capitalize;
 }
+
+@mixin large() {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin small() {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xsmall() {
+  @media (max-width: $xsm) {
+    @content;
+  }
+}

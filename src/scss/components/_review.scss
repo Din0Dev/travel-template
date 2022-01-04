@@ -1,6 +1,9 @@
 .reviews {
   width: 100%;
   margin: 16rem 0;
+  @include xsmall {
+    margin: 8rem 0;
+  }
   &__body {
     background: $silverLight-40;
     padding: 1rem;

@@ -3,6 +3,10 @@
   background: $silverLight-40;
   padding: 13rem 0;
   transform: skewY(-5deg);
+  @include xsmall {
+    margin: 4rem 0;
+    padding: 6rem 0;
+  }
   &__contents {
     transform: skewY(5deg);
     &__container {
@@ -11,6 +15,9 @@
   }
   &__left {
     margin-right: 10rem;
+    @include medium {
+      margin-right: 0;
+    }
     &__heading {
       font-size: 3.5rem;
       font-weight: 900;
@@ -19,11 +26,22 @@
       color: transparent;
       background-clip: text;
       text-transform: capitalize;
+      @include medium {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      @include xsmall {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
     }
     &__paragraph {
       margin-top: 3.6rem;
       font-size: 1.6rem;
       line-height: 2.7rem;
+      @include xsmall {
+        margin-top: 2.5rem
+      }
     }
   }
   &__list {

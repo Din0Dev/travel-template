@@ -2,6 +2,18 @@
   @include position(fixed, 4rem, null, null, 3rem, null, null);
   cursor: pointer;
   z-index: 5;
+  @include large {
+    right: 5rem;
+  }
+  @include medium {
+    right: 4rem;
+  }
+  @include small {
+    right: 2rem;
+  }
+  @include xsmall {
+    right: 1.5rem;
+  }
   span:nth-child(1) {
     @include toggleSpan($main2, 3rem, 0.3rem, null);
   }
@@ -17,6 +29,18 @@
   @include position(fixed, 4rem, null, null, 3rem, null, null);
   cursor: pointer;
   z-index: 5;
+  @include large {
+    right: 5rem;
+  }
+  @include medium {
+    right: 4rem;
+  }
+  @include small {
+    right: 2rem;
+  }
+  @include xsmall {
+    right: 1.5rem;
+  }
   span:nth-child(1) {
     @include toggleSpan($main2, 3rem, 1.5px, null);
     transform: rotate(-45deg) translateY(0.5rem);

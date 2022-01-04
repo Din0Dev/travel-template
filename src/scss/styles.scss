@@ -5,8 +5,9 @@
 }
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 62.5%;
   // Convert 1rem = 10px
+  // Convert to % 10/16 * 100 = 62.5%
 }
 body {
   font-family: "Lemonada", cursive;

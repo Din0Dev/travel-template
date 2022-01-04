@@ -15,8 +15,8 @@ import { OPEN_MODAL } from "../context/types/ModelTypes";
 const HomePage = (props) => {
   //! State
   const [state] = useState({
-    heading: "Tao đang đi du lịch nè !",
-    paragraph: "Đi với tao tao cho hút cần và ngắm vẻ đẹp của lúi dừng",
+    heading: "Traveling Website",
+    paragraph: "Design with ReactJS no Framework by Dino Dev ",
   });
 
   const [registerModel] = useState("registerModel");
@@ -48,7 +48,7 @@ const HomePage = (props) => {
               dispatch({ type: OPEN_MODAL, payload: registerModel })
             }
           >
-            Đi với bạn êi !
+            Let's Start!
           </button>
         </div>
       </Header>

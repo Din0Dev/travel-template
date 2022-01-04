@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Login from "../auth/Login";
 import Register from "../auth/Register";
 import Destinations from "../components/Destinations";
+import Footer from "../components/footer/Footer";
 import GalleryComponent from "../components/gallery/GalleryComponent";
 import Header from "../components/Header";
 import Modal from "../components/Modal";
@@ -56,6 +57,8 @@ const HomePage = (props) => {
       <Services />
       <Reviews />
       <GalleryComponent />
+      {/*  */}
+      <Footer />
       {/* MODAL */}
       <Modal current={registerModel}>
         <Register currentModel={loginModel} />

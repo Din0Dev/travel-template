@@ -1,0 +1,64 @@
+.footer {
+  width: 100%;
+  min-height: 60rem;
+  margin-top: 8rem;
+  padding: 8rem 0;
+  &__container {
+    width: 100%;
+    &__block {
+      background: $white;
+      padding: 2rem;
+    }
+  }
+  &__intro {
+    &__img {
+      width: 15rem;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    &__msg {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: $silverLight;
+      width: 80%;
+      font-weight: 400;
+      line-height: 2.5rem;
+    }
+  }
+  &__heading {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  &__ul {
+    list-style: none;
+    &__li {
+      display: flex;
+      align-items: center;
+      color: $silverLight;
+      a {
+        text-decoration: none;
+        color: $silverLight;
+        display: block;
+        padding: 0.5rem 0;
+        text-transform: capitalize;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  &__bottom {
+    width: 100%;
+    background: linear-gradient(to right, $main1, $main2);
+    color: $white;
+    height: 5rem;
+    @include align(flex, center, center, null);
+    p{
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+  }
+}

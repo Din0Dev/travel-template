@@ -11,7 +11,6 @@ const GalleryComponent = (props) => {
   } = useContext(GalleryContext);
 
   const [heading] = useState("Travels Captured Images");
-  console.log("galleryStore", lightBoxStatus);
   //! Function
 
   //! Render

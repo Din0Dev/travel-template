@@ -13,6 +13,7 @@ import DestinationsProvider from "./context/providers/DestinationsProvider";
 import Details from "./pages/Details";
 import ServicesProvider from "./context/providers/ServicesProvider";
 import GalleryProvider from "./context/providers/GalleryProvider";
+import Contact from "./pages/Contact";
 function App() {
   //! State
 
@@ -35,6 +36,9 @@ function App() {
                     </Route>
                     <Route path={routeUrl.ABOUT_PAGE}>
                       <About />
+                    </Route>
+                    <Route path={routeUrl.CONTACT_PAGE}>
+                      <Contact />
                     </Route>
                     <Route path={routeUrl.DETAIL_PAGE} exact>
                       <Details />

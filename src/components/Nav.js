@@ -20,6 +20,9 @@ const Nav = (props) => {
           <li>
             <Link to={routeUrl.ABOUT_PAGE}>About</Link>
           </li>
+          <li>
+            <Link to={routeUrl.CONTACT_PAGE}>Contact</Link>
+          </li>
         </div>
       </div>
     </>

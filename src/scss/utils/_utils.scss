@@ -21,9 +21,23 @@
     border-radius: 0.4rem;
     outline: none;
     font-size: 1.6rem;
-    border: 1px solid $silver;
+    border: 1px solid $silverLight-45;
     height: 5rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+  &__textarea {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    outline: none;
+    font-size: 1.6rem;
+    border: 1px solid $silverLight-45;
+    height: 10rem;
+    padding: 1.5rem;
+    &::placeholder{
+      font-family: sans-serif;
+      font-size: 1.5rem;
+    }
   }
 }
 

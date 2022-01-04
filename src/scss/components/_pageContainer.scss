@@ -29,4 +29,13 @@
       margin-top: 2rem;
     }
   }
+  & .container .row {
+    align-items: center;
+  }
+  &__contact_heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
 }

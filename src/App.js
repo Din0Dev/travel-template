@@ -12,6 +12,7 @@ import { HelmetProvider } from "react-helmet-async";
 import DestinationsProvider from "./context/providers/DestinationsProvider";
 import Details from "./pages/Details";
 import ServicesProvider from "./context/providers/ServicesProvider";
+import GalleryProvider from "./context/providers/GalleryProvider";
 function App() {
   //! State
 
@@ -22,29 +23,31 @@ function App() {
     <Router>
       <ModelProvider>
         <NavProvider>
-          <DestinationsProvider>
-            <ServicesProvider>
-              <Toggle />
-              <Nav />
-              <HelmetProvider>
-                <Switch>
-                  <Route path={routeUrl.HOME_PAGE} exact>
-                    <HomePage />
-                  </Route>
-                  <Route path={routeUrl.ABOUT_PAGE}>
-                    <About />
-                  </Route>
-                  <Route path={routeUrl.DETAIL_PAGE} exact>
-                    <Details />
-                  </Route>
-                  {/*  */}
-                  <Route>
-                    <PageNotFound />
-                  </Route>
-                </Switch>
-              </HelmetProvider>
-            </ServicesProvider>
-          </DestinationsProvider>
+          <GalleryProvider>
+            <DestinationsProvider>
+              <ServicesProvider>
+                <Toggle />
+                <Nav />
+                <HelmetProvider>
+                  <Switch>
+                    <Route path={routeUrl.HOME_PAGE} exact>
+                      <HomePage />
+                    </Route>
+                    <Route path={routeUrl.ABOUT_PAGE}>
+                      <About />
+                    </Route>
+                    <Route path={routeUrl.DETAIL_PAGE} exact>
+                      <Details />
+                    </Route>
+                    {/*  */}
+                    <Route>
+                      <PageNotFound />
+                    </Route>
+                  </Switch>
+                </HelmetProvider>
+              </ServicesProvider>
+            </DestinationsProvider>
+          </GalleryProvider>
         </NavProvider>
       </ModelProvider>
     </Router>
